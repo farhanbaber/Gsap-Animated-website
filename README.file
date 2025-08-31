@@ -1,0 +1,45 @@
+ 3D Earbuds Website
+This repository contains the source code for a 3D interactive website showcasing a pair of wireless earbuds. The project was built to demonstrate my skills in creating an immersive, high-performance web experience using modern front-end technologies. 🎧
+
+🛠️ Key Technologies Used
+Three.js: The core JavaScript library for rendering the 3D model and managing the scene.
+
+React Three Fiber (R3F): A powerful React renderer for Three.js, allowing for declarative 3D scenes.
+
+React: The foundational front-end library used to build the user interface and manage application state.
+
+Tailwind CSS: For fast and efficient styling of the website's UI.
+
+✨ Features
+Interactive 3D Model: Users can freely rotate, zoom, and pan the earbud model.
+
+Dynamic Lighting: The scene includes realistic lighting and shadows that react to user interaction.
+
+Responsive Design: The website provides a seamless experience on both desktop and mobile devices.
+
+Performance Optimized: The scene is optimized for smooth rendering and fast load times.
+
+🚀 How to Run Locally
+To get a local copy up and running, follow these simple steps:
+
+Clone the repository:
+
+git clone [your_repository_url]
+Navigate to the project directory:
+
+cd [your_project_name]
+Install dependencies:
+
+npm install
+Start the development server:
+
+npm start
+The application will be accessible at http://localhost:3000.
+
+✍️ Acknowledgment
+A special thanks to the creators and community of Three.js and React Three Fiber for the incredible libraries that made this project possible.
+
+🔗 Connect with me!
+Feel free to connect with me on LinkedIn to discuss this project or other web development topics.
+
+[farhan baber]

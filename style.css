@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Carter+One&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Dancing+Script:wght@700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 11vh;
+    /* border: 2px solid red; */
+
+}
+#img{
+    width: 150px;
+    padding: 10px 20px;
+    position: relative;
+    /* bottom: 15px; */
+    object-fit: cover;
+    background-size: cover;
+}
+
+#btn{
+    padding: 10px 20px;
+    float: right;
+    position: relative;
+    top: 30px;
+    margin: 0.2em 4em; 
+    border: none;
+  font-family: "Allerta Stencil", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+
+#btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border: 1px solid black;
+}
+
+#btn:active {
+  transform: perspective(600px) rotateX(3deg) rotateY(3deg) scale(0.9);
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.container-one{
+    width: 100%;
+    height: 89vh;
+    /* height: 200vh; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.text-div{
+    width: 95%;
+    height: 70vh;
+    /* border: 2px solid green; */
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 4rem;
+
+    
+}
+h1{
+    color: white;
+    font-size: 208px;
+      font-family: "Cinzel", serif;
+
+}
+#h-one{
+    position: relative;
+
+}
+.air{
+    width: 420px;
+    position: relative;
+    /* position: absolute; */
+    left: 5rem;
+    top: 20px;
+    /* height: auto; */
+    /* display: inline-block; */
+      z-index: 9999;     /* sab elements se upar */
+  transition: filter 0.4s ease; /* smooth transition */
+    filter: grayscale(100%) !important;
+
+}
+#h-one{
+position: relative;
+left: 8rem;
+}
+#h-two{
+position: relative;
+right: 3.5rem;
+}
+.container-two{
+    width: 100%;
+    height: 89vh;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 20px;
+}
+.child-one{
+    height: 80vh;
+    width: 70%;
+    /* border: 2px solid red; */
+}
+.child-two{
+    height: 80vh;
+    width: 40%;
+    /* border: 2px solid red; */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px; 
+  font-family: "Poppins", sans-serif;
+}
+button{
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Border pehle se fix */
+    transition: 0.2s ease-in-out all;
+}
+
+button:active{
+    transform: scale(0.90);
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+    border-color: white; /* Sirf color change hoga, size nahi */
+}
+
+#btn-two{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-left: 1rem; /* relative position ke bajaye margin use karein */
+}
+#btn-two:hover{
+    background-color: white;        
+    color: black;
+}
+h2{
+    font-size: 60px;
+          font-family: "Cinzel", serif;
+
+}
+#h-three{
+    color: rgb(0, 0, 0);
+font-family: "Cinzel", serif;
+font-size: 200px;
+-webkit-text-stroke:1px  white;
+opacity: 0.2;
+}
+
+.container-three{
+    width: 100%;
+    height: 89vh;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+        padding: 25px 20px;
+
+}
+.child-three{
+    height: 80vh;
+    width: 55%;
+    /* border: 2px solid green; */
+}
+.child-four{
+    height: 80vh;
+    width: 40%;
+    /* border: 2px solid green; */
+}
+.child-three {
+  height: 80vh;
+  width: 55%;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: flex-start; /* left align */
+  align-items: center;         /* vertically center */
+}
+
+.child-three img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* img distort na ho */
+  position: relative;
+  right: 12rem;
+  filter: brightness(60%); /* brightness kam karega */
+}
+
+    .cube-container {
+      width: 200px;
+      height: 200px;
+      perspective: 800px;
+      margin: 50px auto;
+      position: relative;
+      top: 5rem;
+    }
+
+    .cube {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: rotate 15s infinite linear;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      color: rgb(21, 153, 214);
+      font-size: 18px;
+      text-align: center;
+      line-height: 200px;
+      background: transparent;
+      opacity: 0.9;
+      border: 2px solid;
+      border-image: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 26%,
+        rgb(0, 0, 0) 85%
+      );
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Reduced white shadow */
+    }
+
+    .front {
+      transform: translateZ(100px);
+      background: transparent;
+    }
+
+    .back {
+      transform: rotateY(180deg) translateZ(100px);
+      background: transparent;
+    }
+
+    .right {
+      transform: rotateY(90deg) translateZ(100px);
+      background: transparent;
+    }
+
+    .left {
+      transform: rotateY(-90deg) translateZ(100px);
+      background: transparent;
+    }
+
+    .top {
+      transform: rotateX(90deg) translateZ(100px);
+      background: transparent;
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+      background: transparent;
+    }
+
+    .cube-container:hover .cube {
+      animation-play-state: paused;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://via.placeholder.com/200') no-repeat center;
+      background-size: cover;
+    }
+     .star {
+      position: fixed;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite alternate;
+        pointer-events: none; /* taki stars ke upar click block na ho */
+  z-index: -1; /* content ke peeche ho */
+    }
+    @keyframes twinkle {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+    @keyframes move {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-100vh); }
+    }
+    
+    #h-four{
+        color: aliceblue;
+        font-family: "Cinzel", serif;
+        font-size: 40px;
+        width: 440px;
+        position: relative;
+        top: 6.4rem;
+        left: 50px;
+
+    }
+.container-five{
+    width: 100%;
+    height: 89vh;
+    /* border: 2px solid red; */
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+    .child-five {
+  width: 100%;
+  height: 80vh;
+  /* border: 2px solid green;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.airpods-images {
+  display: flex;
+  gap: 100px; /* yahan se 20px ka gap milega */
+  position: relative;
+  top: 12rem;
+  z-index: 1;
+
+}
+
+.airpods-images img {
+  width: 300px; /* apni zarurat ke hisaab se size */
+  transition: transform 0.3s ease;
+}
+
+.airpods-images img:hover {
+  transform: scale(1.1); /* hover par thoda zoom effect */
+}
+
+#h-five {
+  text-align: center;
+  color: rgb(228, 228, 228);
+  filter: brightness(10%);
+  font-size: 280px;     
+          font-family: "Cinzel", serif;
+          position: relative;
+          bottom: 6rem;
+}
+#img-one{
+    width: 380px;
+    object-fit: cover;
+    background-size: cover;
+      image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;  
+}
+
+.fot {
+  width: 90%;
+  border-top: 1px solid rgba(200,200,200,0.5); /* halki line */
+  padding: 1rem 2rem;
+  position: relative;
+  left: 5rem;
+  /* border: 2px solid red; */
+}
+
+.lst-fot {
+  display: flex;
+  justify-content: space-between; /* left-right alignment */
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; /* icons ke beech space */
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-logo img {
+  width: 120px; /* apne logo size ke hisaab se adjust */
+}
+
+#github{
+    width: 100px;
+    height: 50px;
+}
+#linkedin{
+    width: 50px;
+    height: 50px;
+}
+.container-three, 
+.container-five {
+    height: 100vh; /* full screen */
+}
+#h-one, #h-two {
+  display: inline-block;
+}

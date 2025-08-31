@@ -7,6 +7,8 @@
 body{
     background-color: black;
     overflow-x: hidden;
+      cursor: none; /* default cursor gayab */
+
 }
 nav{
     width: 100%;
@@ -32,7 +34,7 @@ nav{
     border: none;
   font-family: "Allerta Stencil", sans-serif;
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -128,7 +130,7 @@ button{
     padding: 10px 20px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 5px;
     border: 1px solid transparent; /* Border pehle se fix */
     transition: 0.2s ease-in-out all;
@@ -424,4 +426,16 @@ opacity: 0.2;
 }
 #h-one, #h-two {
   display: inline-block;
+}
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;   /* size apne hisaab se */
+  height: 30px;
+  background: rgba(255, 255, 255, 0.8); /* black circle */
+  border-radius: 50%;
+  pointer-events: none; /* important: taake click block na ho */
+  z-index: 9999; /* sabse upar */
+  transform: translate(-50%, -50%);
 }
